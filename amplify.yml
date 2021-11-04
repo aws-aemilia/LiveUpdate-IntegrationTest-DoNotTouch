@@ -3,6 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
+        - echo "Node Live Update Test - $(node -v)"
+        - echo "Which Node - $(which node)"
         - echo "Yarn Live Update Test - $(yarn -v)"
         - echo "Which Yarn - $(which yarn)"
         - yarn install
